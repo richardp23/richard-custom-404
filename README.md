@@ -30,7 +30,6 @@ A clever, developer-themed 404 page with random programming jokes for use across
 │   ├── styles.css            # Styles
 │   └── scripts/              # Build scripts
 │       └── create-standalone.ts
-├── 404.html                  # Copy of the final output (for convenience)
 ├── package.json
 ├── tsconfig.json
 └── README.md
