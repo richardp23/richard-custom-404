@@ -8,7 +8,6 @@ const distDir: string = path.join(rootDir, 'dist');
 const sourceDir: string = path.join(distDir, 'source');
 const htmlFile: string = path.join(sourceDir, 'index.html');
 const outputFile: string = path.join(distDir, '404.html');
-const rootOutputFile: string = path.join(rootDir, '404.html');
 
 /**
  * Create a standalone HTML file with inlined CSS and JavaScript
@@ -101,10 +100,6 @@ async function createStandaloneFile(): Promise<void> {
     // Write the formatted HTML to the output file
     fs.writeFileSync(outputFile, formattedHTML);
     console.log(`📄 Created standalone file: ${outputFile}`);
-
-    // Copy to the root directory for easy access
-    fs.copyFileSync(outputFile, rootOutputFile);
-    console.log(`📋 Copied to root directory: ${rootOutputFile}`);
     
     console.log('✨ Standalone build completed successfully!');
   } catch (error) {

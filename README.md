@@ -69,9 +69,7 @@ npm start
 npm run build
 ```
 
-This will create:
-1. The standalone `404.html` file in the `dist` directory
-2. A copy in the root of your project for easy access
+This will create a standalone `404.html` file in the `dist` directory.
 
 ## Customization
 
