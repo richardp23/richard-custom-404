@@ -124,4 +124,4 @@ This 404 page was created with the help of Claude 3.7 Sonnet (Thinking) in Curso
 
 ## License
 
-MIT 
+MIT License - see [LICENSE.md](LICENSE.md) for details.
