@@ -1,0 +1,34 @@
+{
+  "name": "richard-404",
+  "version": "1.0.0",
+  "description": "A clever, developer-themed 404 page for richardp23.com",
+  "source": "src/index.html",
+  "targets": {
+    "default": {
+      "distDir": "./dist/source"
+    }
+  },
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "start": "parcel src/index.html -p 3000 --open",
+    "clean": "rm -rf dist .parcel-cache",
+    "build:ts": "tsc -p tsconfig.json",
+    "build:parcel": "parcel build src/index.html --no-source-maps --public-url ./",
+    "build": "npm run clean && npm run build:parcel && npm run build:ts && node dist/scripts/create-standalone.js"
+  },
+  "keywords": [
+    "404",
+    "error-page",
+    "typescript",
+    "developer"
+  ],
+  "author": "Richard Perez Jr.",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.11.24",
+    "parcel": "^2.9.3",
+    "prettier": "^3.5.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.1.6"
+  }
+}

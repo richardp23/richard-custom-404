@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found | Richard Perez Jr.</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+    <!-- The styles.css will be inlined during the build process -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>404</h1>
+        <h2>Oops! Page Not Found</h2>
+        
+        <div class="spinning-emoji">💻</div>
+        
+        <p>The page you're looking for seems to have gone to debug another application.</p>
+        
+        <div class="error-code">
+            <span style="color: #10b981;">$</span> find-page <span style="color: #f59e0b;">--url</span> "current-page"<br>
+            <span style="color: #ef4444;">Error 404: Page not found in Richard's codebase</span><br>
+            <span style="color: #10b981;">$</span> debug --fix<br>
+            <span style="color: #f59e0b;">Attempting to fix...</span><br>
+            <span style="color: #ef4444;">Critical error: User probably typed the URL wrong!</span><br>
+            <span style="color: #10b981;">$</span> suggest-solution<br>
+            <span style="color: #60a5fa;">Try clicking the button below to go home!</span><br>
+            <span style="color: #10b981;">$</span> <span class="cursor"></span>
+        </div>
+        
+        <p>Don't worry, even the best developers make typos sometimes.</p>
+        
+        <a href="/" class="action-btn" id="change-redirect-here">Return to Home Page</a>
+        
+        <div class="debug-joke" id="joke-container">
+            <p id="joke-setup"></p>
+            <p id="joke-punchline"></p>
+            <button class="new-joke-btn" id="new-joke-btn">Get another joke</button>
+        </div>
+        
+        <div class="claude-attribution">
+            <span>This 404 page was created with the help of</span>
+            <span class="claude-badge">Claude 3.7 Sonnet (Thinking) in Cursor v0.46</span>
+        </div>
+    </div>
+    
+    <!-- The script will be inlined during the build process -->
+    <script type="module" src="index.ts"></script>
+</body>
+</html> 
