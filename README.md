@@ -117,7 +117,7 @@ To add your own jokes to the rotation:
 
 ## Credits
 
-This 404 page was created with the help of Claude 3.7 Sonnet (Thinking) in Cursor v0.46.
+This 404 page was created with the help of claude-3.7-sonnet-thinking (Cursor v0.46).
 
 ## License
 
